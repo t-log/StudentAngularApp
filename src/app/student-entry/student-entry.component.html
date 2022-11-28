@@ -2,45 +2,45 @@
 <div class="container">
     <div class="row">
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Student Name:</label>
-                <input type="text" class="form-control" name="" id="">
+                <input type="text" class="form-control" name="name" [(ngModel)]="name" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Roll no:</label>
-                <input type="number" class="form-control" name="" id="">
+                <input type="number" class="form-control" name="rollno" [(ngModel)]="rollNo" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">Admno no:</label>
-                <input type="number" class="form-control" name="" id="">
+                <input type="number" class="form-control" name="admno" [(ngModel)]="admno" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">Mobile no:</label>
-                <input type="number" class="form-control" name="" id="">
+                <input type="number" class="form-control" name="mobileNo" [(ngModel)]="mobileNo" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">College Name:</label>
-                <input type="text" class="form-control" name="" id="">
+                <input type="text" class="form-control" name="clgName" [(ngModel)]="clgName" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">Parent Name:</label>
-                <input type="text" class="form-control" name="" id="">
+                <input type="text" class="form-control" name="parentName" [(ngModel)]="parentName" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">Parent Phone no:</label>
-                <input type="number" class="form-control" name="" id="">
+                <input type="number" class="form-control" name="parentPhno" [(ngModel)]="parentPhno" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">User Name:</label>
-                <input type="text" class="form-control" name="" id="">
+                <input type="text" class="form-control" name="userName" [(ngModel)]="userName" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for="">Password:</label>
-                <input type="password" class="form-control" name="" id="">
+                <input type="password" class="form-control" name="pass" [(ngModel)]="pass" id="">
             </div>
-            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <div class="row g-3 col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
                 <label for=""></label>
-                <button class="btn btn-primary form-control">Submit</button>
+                <button (click)="studEntry()" class="btn btn-primary form-control">Submit</button>
             </div>
         </div>
     </div>
