@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-2">
+                <h5>Student Search</h5>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Student Name:</label>
+                    <input type="text" class="form-control" name="name"[(ngModel)]="name" id="">
+                </div>
+                <div class="text-center col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-12">
+                    <button (click)="readValue()" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3" *ngFor="let i of searchData">
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Name:</label>
+            <input type="text" name="" value="{{i.name}}" id=""  class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Admno:</label>
+            <input type="text" name="" value="{{i.admno}}" id=""  class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Mobile Number:</label>
+            <input type="text" name="" value="{{i.mob}}" id=""  class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">College</label>
+            <input type="text" name="" value="{{i.clgName}}" id=""  class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Parent Name</label>
+            <input type="text" name="" value="{{i.parentName}}" id=""  class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Parent Phone</label>
+            <input type="text" name="" value="{{i.parentPhno}}" id=""  class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <button (click)="deleteButtonClick(i.id)" class="btn btn-danger">Delete Student</button>
+        </div>
+    </div>
+</div>
+
+
